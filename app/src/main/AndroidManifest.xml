@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.syd.mystudydemo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:fullBackupContent="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Default_Theme">
+
+        <activity android:name=".activity.MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".process_training.activity.ActivitySecond"
+            android:process=":second">
+        </activity>
+        <activity
+            android:name=".process_training.activity.ActivityThird">
+
+
+        </activity>
+        <activity android:name=".training_surface.ActivitySurface"/>
+        <activity android:name=".training_inputmanager.ActivityInputManager"/>
+        <!--EventBus——training-->
+        <activity android:name=".training_eventbus.ActivityEventBus"/>
+        <activity android:name=".training_eventbus.ActivityEventBusSend"/>
+        <activity android:name=".training_eventbus.ActivityReceiver"/>
+        <!--Focus——training-->
+        <activity android:name=".training_focus.ActivityMain"/>
+        <!--progressBar====training-->
+        <activity android:name=".training_progressbar.ActivityProgressBarMain"/>
+        <!--shadow===training-->
+        <activity android:name=".training_shadow.ActivityShadow"/>
+        <!--okHttp===training-->
+        <activity android:name=".training_net.ActivityOkHttp"/>
+        <activity android:name=".training_view.ActivityView"/>
+        <activity android:name=".training_lifecycle.ActivityLifeCycle" android:launchMode="standard" android:taskAffinity="com.syd.m"/>
+        <activity android:name=".activity.txt1.ActivityTxt"/>
+        <activity android:name=".training_lifecycle.ActivityLifeCycleDialog"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity android:name=".training_click.ActivityClick"/>
+        <activity android:name=".traning_anim.ActivityAnimation"/>
+        <activity android:name=".training_thread.ActivityThread"/>
+        <activity android:name=".training_menu.MenuActivity"/>
+        <activity android:name=".ble.ActivityBLE"/>
+        <activity android:name=".training_net.ActivityVolley"/>
+        <activity android:name=".training_net.ActivityNetStudy"/>
+        <activity android:name=".training_status_bar.ActivityStatusBar" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <!--<activity android:name=".training_status_bar.ActivityStatusBar"/>-->
+        <activity android:name=".activity.base.BaseActivity"/>
+        <activity android:name=".process_training.activity.ActivityFirst"/>
+        <activity android:name=".activity.TestActivity"/>
+        <activity android:name=".training_glide.GlideActivity"/>
+
+        <service android:name=".training_inputmanager.MyDownLoadIntentService"/>
+
+    </application>
+    <!--    &lt;!&ndash;连接网络权限，用于执行云端语音能力 &ndash;&gt;
+        <uses-permission android:name="android.permission.INTERNET"/>
+        &lt;!&ndash;获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 &ndash;&gt;
+        <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+        &lt;!&ndash;读取网络信息状态 &ndash;&gt;
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        &lt;!&ndash;获取当前wifi状态 &ndash;&gt;
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+        &lt;!&ndash;允许程序改变网络连接状态 &ndash;&gt;
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+        &lt;!&ndash;读取手机信息权限 &ndash;&gt;
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        &lt;!&ndash;读取联系人权限，上传联系人需要用到此权限 &ndash;&gt;
+        <uses-permission android:name="android.permission.READ_CONTACTS"/>
+        &lt;!&ndash;外存储写权限，构建语法需要用到此权限 &ndash;&gt;
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        &lt;!&ndash;外存储读权限，构建语法需要用到此权限 &ndash;&gt;
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        &lt;!&ndash;配置权限，用来记录应用配置信息 &ndash;&gt;
+        <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+        &lt;!&ndash;手机定位信息，用来为语义等功能提供定位，提供更精准的服务&ndash;&gt;
+        &lt;!&ndash;定位信息是敏感信息，可通过Setting.setLocationEnable(false)关闭定位请求 &ndash;&gt;
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        &lt;!&ndash;如需使用人脸识别，还要添加：摄相头权限，拍照需要用到 &ndash;&gt;
+        <uses-permission android:name="android.permission.CAMERA"/>-->
+
+</manifest>

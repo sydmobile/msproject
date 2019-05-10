@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="200dp"
+        android:height="200dp"
+        android:viewportWidth="100"
+        android:viewportHeight="100">
+    <group android:name="head_eyes">
+        <path
+            android:fillColor="@color/colorPrimary"
+            android:name="head"
+            android:pathData=" M50,50 A15,15,0,1,1 50,51Z"
+            android:strokeWidth="2"
+            android:strokeColor="@color/colorPrimary"/>
+        <group android:name="eyes">
+            <path android:fillColor="@android:color/white"
+                  android:name="eye_left"
+                  android:pathData="M55,40A2,2,0,1,1,55,41"/>
+            <path android:fillColor="@android:color/white"
+                  android:name="eye_right"
+                  android:pathData="M69,40A2,2,0,1,1,69,41"/>
+        </group>
+
+        <path android:fillColor="@color/colorAccent"
+            android:pathData="M60,55L55,60H65Z"/>
+
+    </group>
+</vector>

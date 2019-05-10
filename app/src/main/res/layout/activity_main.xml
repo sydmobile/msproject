@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--公共按钮，负责跳转到相应的training页面-->
+        <TextView
+            android:id="@+id/tv_next_surface"
+            style="@style/activity_main_text"
+            android:text="@string/text_surface"
+            />
+        <!--公共按钮，负责跳转到相应的training页面-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_to_activity_first"
+                style="@style/activity_main_text_1"
+                android:background="@color/colorAccent"
+                android:text="@string/text_process"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_test"
+            style="@style/activity_main_text"
+            android:text="@string/text_test"/>
+        <TextView
+            android:id="@+id/tv_next_input_manager"
+            style="@style/activity_main_text"
+            android:text="@string/text_input"/>
+
+
+        <TextView
+            android:id="@+id/tv_next_event_bus"
+            style="@style/activity_main_text"
+            android:text="@string/text_event_bus"/>
+        <!---->
+        <TextView
+            android:id="@+id/tv_next_focus"
+            style="@style/activity_main_text"
+            android:text="@string/text_focus"/>
+
+        <TextView
+            android:id="@+id/tv_next_ok_http"
+            style="@style/activity_main_text"
+            android:text="@string/net"/>
+
+        <TextView
+            android:id="@+id/tv_next_view"
+            style="@style/activity_main_text"
+            android:text="@string/view"/>
+
+        <TextView
+            android:id="@+id/tv_next_progressbar"
+            style="@style/activity_main_text"
+            android:text="@string/progress_bar"/>
+
+        <TextView
+            android:id="@+id/tv_next_shadow"
+            style="@style/activity_main_text"
+            android:text="@string/text_shadow"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_activity_life_cycle"
+            style="@style/activity_main_text"
+            android:text="@string/activity_cycle"
+            />
+
+        <TextView
+            android:id="@+id/tv_activity_button"
+            style="@style/activity_main_text"
+            android:text="@string/activity_button"
+            />
+
+        <TextView
+            android:id="@+id/tv_activity_animation"
+            style="@style/activity_main_text"
+            android:text="@string/activity_animation"
+            />
+        <TextView
+            android:id="@+id/tv_activity_thread"
+            style="@style/activity_main_text"
+            android:text="@string/activity_thread"
+            />
+        <TextView
+            android:id="@+id/tv_activity_ble"
+            style="@style/activity_main_text"
+            android:text="@string/activity_ble"
+            />
+        <TextView
+            android:id="@+id/tv_activity_status_bar"
+            style="@style/activity_main_text"
+            android:text="@string/activity_status_bar"
+            />
+
+        <TextView
+            android:id="@+id/tv_activity_glide"
+            style="@style/activity_main_text"
+            android:text="@string/activity_glide"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

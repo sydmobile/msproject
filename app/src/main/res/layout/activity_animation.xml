@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/animation"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <Button
+            android:id="@+id/bt_animation_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/scale"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/bt_animation_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/rotate"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_no_limit"
+        style="@android:style/Widget.Button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ripple_no"
+        android:gravity="center"
+        android:text="@string/no"/>
+
+    <TextView
+        android:id="@+id/tv_no_id"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ripple_no_id"
+        android:gravity="center"
+        android:text="@string/no"/>
+
+    <TextView
+        android:id="@+id/tv_have_id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ripple_have_id"
+        android:gravity="center"
+        android:text="@string/no"/>
+</LinearLayout>

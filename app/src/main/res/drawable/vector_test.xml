@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportHeight="10"
+    android:viewportWidth="10">
+    <group android:name="test"
+        >
+
+        <path android:name="vector"
+              android:strokeColor="@color/colorPrimary"
+              android:strokeWidth="2"
+              android:trimPathStart="0.4"
+              android:trimPathOffset="0.5"
+              android:pathData="M10,0,L10,
+              10"/>
+        <path
+            android:name="startLine"
+            android:pathData="M0,10L10,10"
+            android:strokeWidth="1"
+            android:strokeColor="@color/colorAccent"/>
+        <path
+            android:name="endLine"
+            android:pathData="M0,0L10,0"
+            android:strokeWidth="1"
+            android:strokeColor="@color/main_green_00b661"/>
+    </group>
+<!--trimPathStart  显示的是从开始位置截取剩下的。0 的时候剩下全部，1 的时候全部截取完毕-->
+    <!--trimPathEnd 显示的是从结束位置截取的内容，0 的时候什么都没有截取到，1 的时候全部截取到-->
+<!--    android:trimPathEnd="0.1"-->
+
+    <!--android:trimPathStart="0"-->
+</vector>

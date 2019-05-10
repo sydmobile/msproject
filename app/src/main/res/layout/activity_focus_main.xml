@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="ddd"/>
+
+            <LinearLayout
+                android:id="@+id/ll_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:id="@+id/tv_content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="标题内容"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_content2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="标题内容"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="button"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="标题内容"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="标题内容"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="标题内容"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="标题内容"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="标题内容"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="标题内容"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"/>
+
+            <com.syd.mystudydemo.training_focus.view.MyListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.syd.mystudydemo.training_focus.view.MyListView>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

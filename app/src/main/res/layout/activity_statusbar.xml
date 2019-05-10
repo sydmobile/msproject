@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="#FFFFFF"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--<android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb"
+        app:title="@string/activity_status_bar"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorAccent">
+    </android.support.v7.widget.Toolbar>-->
+ <TextView
+        android:background="#FFFF00"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="11"
+        android:textColor="#000"/>
+    <ImageView
+        android:contentDescription="@string/text_input"
+        android:id="@+id/iv"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@mipmap/imga"/>
+    <TextView
+        android:fitsSystemWindows="true"
+        android:background="#FFFF00"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="11"
+        android:textColor="#000"/>
+ <!--   <TextView
+        android:background="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11"
+        android:textColor="#000"/>-->
+</LinearLayout>
